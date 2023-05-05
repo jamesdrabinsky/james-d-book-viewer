@@ -17,7 +17,7 @@
           <ul>
             <% result[:paragraphs].each do |index, text| %>
               <li> 
-                <a href="/chapters/<%= result[:number] %>paragraph<%= index %>">
+                <a href="/chapters/<%= result[:number] %>#paragraph<%= index %>">
                   <%= highlight(text, params[:query]) %> 
                 </a>
               </li>
